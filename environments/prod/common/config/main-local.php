@@ -7,6 +7,7 @@ return [
             'username' => 'maxwelldu',
             'password' => 'yu13jiu14',
             'charset' => 'utf8',
+            
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
