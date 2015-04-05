@@ -51,5 +51,13 @@ return [
                 ],
             ],
         ],
+		 'db' => [
+			  'class' => 'yii\db\Connection',
+              'dsn' => 'mysql:host=maxwelldu.mysql.rds.aliyuncs.com;dbname=sjmcms',
+              'username' => 'maxwelldu',
+              'password' => 'yu13jiu14',
+              'charset' => 'utf8',
+          ],
+
     ],
 ];
