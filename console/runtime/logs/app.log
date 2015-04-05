@@ -1,0 +1,1602 @@
+2015-03-26 22:37:25 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-03-26 22:37:25 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-26 22:37:25 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.OZndimLzTt/Render'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'TERM_SESSION_ID' => '7B0198BF-03D5-4180-A388-4B5EC07A01B8'
+    'USER' => 'michaeldu'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.XFumXYCox1/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427380645.2956
+    'REQUEST_TIME' => 1427380645
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-26 14:37:58 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Migration.php(248): yii\db\Command->execute()
+#2 /alidata/www/index/movienext-aliyun/advanced/console/migrations/m130524_201442_init.php(27): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(492): m130524_201442_init->up()
+#4 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(129): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#9 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#10 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#11 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#12 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /alidata/www/index/movienext-aliyun/advanced/yii(31): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(255) NOT NULL,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255),
+	`email` varchar(255) NOT NULL,
+	`status` smallint(6) NOT NULL DEFAULT 10,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Schema.php:534
+Stack trace:
+#0 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Migration.php(248): yii\db\Command->execute()
+#2 /alidata/www/index/movienext-aliyun/advanced/console/migrations/m130524_201442_init.php(27): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(492): m130524_201442_init->up()
+#4 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(129): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#9 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#10 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#11 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#12 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /alidata/www/index/movienext-aliyun/advanced/yii(31): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2015-03-26 14:37:53 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'HISTSIZE' => '1000'
+    'OLDPWD' => '/root'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427380673.0003
+    'REQUEST_TIME' => 1427380673
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-27 07:29:54 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{{$user}}' at line 1' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Migration.php(273): yii\db\Command->execute()
+#2 /alidata/www/index/movienext-aliyun/advanced/console/migrations/m130524_201442_init.php(35): yii\db\Migration->dropTable('{{$user}}')
+#3 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(520): m130524_201442_init->down()
+#4 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(185): yii\console\controllers\BaseMigrateController->migrateDown('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#6 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('down', Array)
+#9 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('down', Array)
+#10 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate/down', Array)
+#11 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate/down', Array)
+#12 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /alidata/www/index/movienext-aliyun/advanced/yii(31): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{{$user}}' at line 1
+The SQL being executed was: DROP TABLE {{$user}}' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Schema.php:534
+Stack trace:
+#0 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'DROP TABLE {{$u...')
+#1 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Migration.php(273): yii\db\Command->execute()
+#2 /alidata/www/index/movienext-aliyun/advanced/console/migrations/m130524_201442_init.php(35): yii\db\Migration->dropTable('{{$user}}')
+#3 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(520): m130524_201442_init->down()
+#4 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(185): yii\console\controllers\BaseMigrateController->migrateDown('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionDown(1)
+#6 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('down', Array)
+#9 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('down', Array)
+#10 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate/down', Array)
+#11 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate/down', Array)
+#12 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /alidata/www/index/movienext-aliyun/advanced/yii(31): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{{$user}}' at line 1
+)
+
+2015-03-27 07:29:52 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '10.0.2.2 52320 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/vagrant'
+    'PATH' => '/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/vagrant/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LOGNAME' => 'vagrant'
+    'SSH_CONNECTION' => '10.0.2.2 52320 10.0.2.15 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'OLDPWD' => '/alidata/www/index/movienext-aliyun/advanced/console'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427441392.3538
+    'REQUEST_TIME' => 1427441392
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/down'
+    ]
+    'argc' => 2
+]
+2015-03-27 07:31:39 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'm130525_201442_init' not found' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php:113
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 07:31:37 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '10.0.2.2 52320 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/vagrant'
+    'PATH' => '/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/vagrant/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LOGNAME' => 'vagrant'
+    'SSH_CONNECTION' => '10.0.2.2 52320 10.0.2.15 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'OLDPWD' => '/alidata/www/index/movienext-aliyun/advanced/console'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427441497.8447
+    'REQUEST_TIME' => 1427441497
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-27 07:32:00 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'm130525_201442_init' not found' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php:113
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 07:31:59 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '10.0.2.2 52320 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/vagrant'
+    'PATH' => '/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/vagrant/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LOGNAME' => 'vagrant'
+    'SSH_CONNECTION' => '10.0.2.2 52320 10.0.2.15 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'OLDPWD' => '/alidata/www/index/movienext-aliyun/advanced/console'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427441519.1559
+    'REQUEST_TIME' => 1427441519
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-27 07:32:44 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'm130525_201442_init' not found' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php:113
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 07:32:42 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '10.0.2.2 52320 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/vagrant'
+    'PATH' => '/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/vagrant/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LOGNAME' => 'vagrant'
+    'SSH_CONNECTION' => '10.0.2.2 52320 10.0.2.15 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'OLDPWD' => '/alidata/www/index/movienext-aliyun/advanced/console'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427441562.7293
+    'REQUEST_TIME' => 1427441562
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-27 07:34:42 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{{$user}} (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varch' at line 1' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php:768
+Stack trace:
+#0 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php(768): PDOStatement->execute()
+#1 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Migration.php(248): yii\db\Command->execute()
+#2 /alidata/www/index/movienext-aliyun/advanced/console/migrations/m130524_201442_init.php(28): yii\db\Migration->createTable('{{$user}}', Array, 'CHARACTER SET u...')
+#3 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(492): m130524_201442_init->up()
+#4 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(129): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp('test')
+#6 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#9 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#10 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#11 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#12 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /alidata/www/index/movienext-aliyun/advanced/yii(31): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{{$user}} (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varch' at line 1
+The SQL being executed was: CREATE TABLE {{$user}} (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(255) NOT NULL,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255),
+	`email` varchar(255) NOT NULL,
+	`status` smallint(6) NOT NULL DEFAULT 10,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Schema.php:534
+Stack trace:
+#0 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Command.php(776): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE {{...')
+#1 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/db/Migration.php(248): yii\db\Command->execute()
+#2 /alidata/www/index/movienext-aliyun/advanced/console/migrations/m130524_201442_init.php(28): yii\db\Migration->createTable('{{$user}}', Array, 'CHARACTER SET u...')
+#3 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(492): m130524_201442_init->up()
+#4 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(129): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp('test')
+#6 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#9 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#10 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#11 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#12 /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /alidata/www/index/movienext-aliyun/advanced/yii(31): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '{{$user}} (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varch' at line 1
+)
+
+2015-03-27 07:34:35 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '10.0.2.2 52320 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/vagrant'
+    'PATH' => '/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/vagrant/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LOGNAME' => 'vagrant'
+    'SSH_CONNECTION' => '10.0.2.2 52320 10.0.2.15 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'OLDPWD' => '/alidata/www/index/movienext-aliyun/advanced/console'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427441675.1564
+    'REQUEST_TIME' => 1427441675
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => 'test'
+    ]
+    'argc' => 3
+]
+2015-03-27 17:01:06 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:01:06 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:00:55 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/common'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427446855.2955
+    'REQUEST_TIME' => 1427446855
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:05:19 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:05:19 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:05:14 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/common'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427447114.025
+    'REQUEST_TIME' => 1427447114
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:07:31 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:07:31 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:07:25 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/config'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427447245.7949
+    'REQUEST_TIME' => 1427447245
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:09:13 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=127....', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:09:13 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:09:10 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/config'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427447350.0085
+    'REQUEST_TIME' => 1427447350
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:09:42 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'demo'' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=127....', 'root', 'root', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'demo'' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'user')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:09:42 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:09:39 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/config'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427447379.0418
+    'REQUEST_TIME' => 1427447379
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:12:50 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=127....', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'maxwell')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'maxwell')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:12:50 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:12:43 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/config'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427447563.8111
+    'REQUEST_TIME' => 1427447563
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:17:15 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=127....', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'maxwelldu')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'maxwelldu')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:17:15 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:17:08 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/config'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427447828.3637
+    'REQUEST_TIME' => 1427447828
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:20:25 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=127....', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'maxwell')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'maxwell')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:20:25 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:20:19 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/config'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427448019.8343
+    'REQUEST_TIME' => 1427448019
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:21:10 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'max')
+#15 [internal function]: console\controllers\InitController->actionUser()
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#22 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('user')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(294): yii\db\Schema->getTableSchema('{{%user}}')
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/ActiveRecord.php(327): yii\db\ActiveRecord::getTableSchema()
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(421): yii\db\ActiveRecord->attributes()
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/BaseActiveRecord.php(263): yii\db\BaseActiveRecord->hasAttribute('username')
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/console/controllers/InitController.php(20): yii\db\BaseActiveRecord->__set('username', 'max')
+#13 [internal function]: console\controllers\InitController->actionUser()
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('user', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('user', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('init/user', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('init/user', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2015-03-27 17:21:10 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:21:06 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/config'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427448066.2959
+    'REQUEST_TIME' => 1427448066
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 09:24:03 [-][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected end of file, expecting function (T_FUNCTION)' in /alidata/www/index/movienext-aliyun/advanced/console/controllers/InitController.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 09:24:03 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '10.0.2.2 52320 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/vagrant'
+    'PATH' => '/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/vagrant/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LOGNAME' => 'vagrant'
+    'SSH_CONNECTION' => '10.0.2.2 52320 10.0.2.15 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'OLDPWD' => '/alidata/www/index/movienext-aliyun/advanced/console'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427448243.1353
+    'REQUEST_TIME' => 1427448243
+    'argv' => [
+        0 => './yii'
+        1 => 'init/user'
+    ]
+    'argc' => 2
+]
+2015-03-27 17:46:51 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:46:48 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427449608.5505
+    'REQUEST_TIME' => 1427449608
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+        2 => 'section'
+    ]
+    'argc' => 3
+]
+2015-03-27 17:47:44 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-27 17:47:42 [-][-][-][info][application] $_SERVER = [
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.v50VI0FDIo/Render'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'XPC_SERVICE_NAME' => '0'
+    'XPC_FLAGS' => '0x0'
+    'TERM_SESSION_ID' => 'B8617D7A-546F-46EE-BC6C-E318648F4BF6'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.gXqOiSFsJw/Listeners'
+    'TERM' => 'xterm-256color'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'USER' => 'michaeldu'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427449662.9009
+    'REQUEST_TIME' => 1427449662
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate/create'
+        2 => 'comment'
+    ]
+    'argc' => 3
+]
+2015-03-30 10:43:59 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'vagrant', 'vagrant', NULL)
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#20 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(816): yii\db\Command->prepare(true)
+#4 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/db/Schema.php(140): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#17 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#18 /Users/michaeldu/Documents/github/movienext-yii2/advanced/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/michaeldu/Documents/github/movienext-yii2/advanced/yii(31): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-03-30 10:43:59 [-][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20121212/memcache.so, 9): image not found' in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-30 10:43:59 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/1s/cvcn366n48gfs7y1xnv4r39w0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.r7zXQanWD2/Render'
+    'TERM_PROGRAM_VERSION' => '343.6.2'
+    'TERM_SESSION_ID' => 'DD93DD64-FF99-4619-BA52-79D5F6DE4993'
+    'USER' => 'michaeldu'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.xYfPAgCaCX/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PATH' => '/Users/michaeldu/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/michaeldu'
+    'LOGNAME' => 'michaeldu'
+    'SECURITYSESSIONID' => '186a5'
+    'OLDPWD' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/console/migrations'
+    'ZSH' => '/Users/michaeldu/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => ''
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    '_' => '/Users/michaeldu/Documents/github/movienext-yii2/advanced/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427683439.6829
+    'REQUEST_TIME' => 1427683439
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-03-30 02:50:59 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'm150327_094648_section' not found' in /alidata/www/index/movienext-aliyun/advanced/vendor/yiisoft/yii2/console/controllers/MigrateController.php:113
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-03-30 02:50:57 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'localhost.localdomain'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '10.0.2.2 54687 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lz=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.bz=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.rar=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/vagrant'
+    'PATH' => '/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/vagrant/bin'
+    'PWD' => '/alidata/www/index/movienext-aliyun/advanced'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LOGNAME' => 'vagrant'
+    'SSH_CONNECTION' => '10.0.2.2 54687 10.0.2.15 22'
+    'LESSOPEN' => '|/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => './yii'
+    'OLDPWD' => '/alidata/www/index/movienext-aliyun'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1427683857.314
+    'REQUEST_TIME' => 1427683857
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
