@@ -4154,6 +4154,7 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1428204007.1852
     'REQUEST_TIME' => 1428204007
 ]
+<<<<<<< HEAD
 2015-04-06 05:22:21 [127.0.0.1][4][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "category".' in C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Module.php:461
 Stack trace:
 #0 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('category', Array)
@@ -6844,10 +6845,93 @@ $_SERVER = [
 $_COOKIE = [
     'PHPSESSID' => 'lofh3ha5r9igmrrpcnp2nbgnf7'
     '_csrf' => '025fcbd389309a99ada5bcf8445a6b52f10c8a158506d89828a88e30c460fdbea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l7Oakl-ic8HeBjTNoGep5MwIKAeUSrUh\";}'
+=======
+2015-04-06 03:33:38 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'vagrant', 'vagrant', NULL)
+#1 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\sjmcms\vendor\yiisoft\yii2\db\Schema.php(383): yii\db\Connection->getSlavePdo()
+#5 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('abc')
+#6 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('abc')
+#7 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Command->getRawSql()
+#8 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#9 D:\sjmcms\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\sjmcms\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#11 D:\sjmcms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#12 D:\sjmcms\common\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#13 D:\sjmcms\common\models\LoginForm.php(73): common\models\User::findByUsername('abc')
+#14 D:\sjmcms\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#15 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#16 D:\sjmcms\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#17 D:\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#18 D:\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#19 D:\sjmcms\common\models\LoginForm.php(58): yii\base\Model->validate()
+#20 D:\sjmcms\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#21 [internal function]: backend\controllers\SiteController->actionLogin()
+#22 D:\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 D:\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#24 D:\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#25 D:\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#26 D:\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\sjmcms\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\sjmcms\vendor\yiisoft\yii2\db\Schema.php(383): yii\db\Connection->getSlavePdo()
+#3 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('abc')
+#4 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('abc')
+#5 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Command->getRawSql()
+#6 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#7 D:\sjmcms\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\sjmcms\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#9 D:\sjmcms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#10 D:\sjmcms\common\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#11 D:\sjmcms\common\models\LoginForm.php(73): common\models\User::findByUsername('abc')
+#12 D:\sjmcms\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#13 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#14 D:\sjmcms\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#15 D:\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#16 D:\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#17 D:\sjmcms\common\models\LoginForm.php(58): yii\base\Model->validate()
+#18 D:\sjmcms\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 D:\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 D:\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 D:\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#23 D:\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#24 D:\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 D:\sjmcms\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2015-04-06 03:33:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'WGU1VEUzQkl1K2RkEwQtIjYodhA8Wht/Hz9mORFpMy4hAEYzJ34xPw=='
+    'LoginForm' => [
+        'username' => 'abc'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'u3ln6prpqeu6qeb7eccq5cgej2'
+    '_csrf' => '68ca6f8e978b6ef6b95ac1569afe8c7c5b6c8b75de47d4a63c170e23f9b2e157a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-NQ0V7oknMCDyiY6GZSmTZqgyesgbMsv\";}'
+>>>>>>> d1c5d61db8ab679214792d773e16ab5d83cb677d
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/sjmcms/backend/web/index.php?r=site%2Findex'
     '__id' => 4
 ]
@@ -6978,10 +7062,140 @@ $_SERVER = [
 $_COOKIE = [
     'PHPSESSID' => 'lofh3ha5r9igmrrpcnp2nbgnf7'
     '_csrf' => '025fcbd389309a99ada5bcf8445a6b52f10c8a158506d89828a88e30c460fdbea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l7Oakl-ic8HeBjTNoGep5MwIKAeUSrUh\";}'
+=======
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'y.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '197'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://y.cc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://y.cc/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=u3ln6prpqeu6qeb7eccq5cgej2; _csrf=68ca6f8e978b6ef6b95ac1569afe8c7c5b6c8b75de47d4a63c170e23f9b2e157a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-NQ0V7oknMCDyiY6GZSmTZqgyesgbMsv%22%3B%7D'
+    'HTTP_RA_VER' => '2.9.0'
+    'HTTP_RA_SID' => 'B7BAB67A-20131113-062756-42ae6f-99dbc0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;G:\\wamp\\bin\\php\\php5.5.12;F:\\index\\mongodb\\bin;C:\\ProgramData\\ComposerSetup\\bin;F:\\programes\\vagrant\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at y.cc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'y.cc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/sjmcms/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/sjmcms/backend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/sjmcms/backend/web/index.php'
+    'REMOTE_PORT' => '50762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1428284018.235
+    'REQUEST_TIME' => 1428284018
+]
+2015-04-06 03:47:40 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'vagrant', 'vagrant', NULL)
+#1 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\sjmcms\vendor\yiisoft\yii2\db\Schema.php(383): yii\db\Connection->getSlavePdo()
+#5 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('maxwelldu')
+#6 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('maxwelldu')
+#7 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Command->getRawSql()
+#8 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#9 D:\sjmcms\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\sjmcms\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#11 D:\sjmcms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#12 D:\sjmcms\common\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#13 D:\sjmcms\common\models\LoginForm.php(73): common\models\User::findByUsername('maxwelldu')
+#14 D:\sjmcms\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#15 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#16 D:\sjmcms\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#17 D:\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#18 D:\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#19 D:\sjmcms\common\models\LoginForm.php(58): yii\base\Model->validate()
+#20 D:\sjmcms\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#21 [internal function]: backend\controllers\SiteController->actionLogin()
+#22 D:\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 D:\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#24 D:\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#25 D:\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#26 D:\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\sjmcms\backend\web\index.php(18): yii\base\Application->run()
+#28 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'vagrant'@'localhost' (using password: YES)' in D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\sjmcms\vendor\yiisoft\yii2\db\Schema.php(383): yii\db\Connection->getSlavePdo()
+#3 D:\sjmcms\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('maxwelldu')
+#4 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('maxwelldu')
+#5 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Command->getRawSql()
+#6 D:\sjmcms\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#7 D:\sjmcms\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\sjmcms\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#9 D:\sjmcms\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveQuery->one()
+#10 D:\sjmcms\common\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#11 D:\sjmcms\common\models\LoginForm.php(73): common\models\User::findByUsername('maxwelldu')
+#12 D:\sjmcms\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
+#13 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#14 D:\sjmcms\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#15 D:\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#16 D:\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#17 D:\sjmcms\common\models\LoginForm.php(58): yii\base\Model->validate()
+#18 D:\sjmcms\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#19 [internal function]: backend\controllers\SiteController->actionLogin()
+#20 D:\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#21 D:\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#22 D:\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#23 D:\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#24 D:\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 D:\sjmcms\backend\web\index.php(18): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2015-04-06 03:47:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'NlJoUGRkWm4bHDlgMlM1BVgfKxQdDQNYcQg7PTA.KwlPNxs3BikpGA=='
+    'LoginForm' => [
+        'username' => 'maxwelldu'
+        'password' => 'yu13jiu14'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '68ca6f8e978b6ef6b95ac1569afe8c7c5b6c8b75de47d4a63c170e23f9b2e157a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-NQ0V7oknMCDyiY6GZSmTZqgyesgbMsv\";}'
+    'PHPSESSID' => 'u3ln6prpqeu6qeb7eccq5cgej2'
+>>>>>>> d1c5d61db8ab679214792d773e16ab5d83cb677d
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     '__returnUrl' => '/sjmcms/backend/web/index.php?r=site%2Findex'
     '__id' => 4
 ]
@@ -7546,4 +7760,52 @@ $_SERVER = [
     'PHP_SELF' => '/sjmcms/backend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1428292756.135
     'REQUEST_TIME' => 1428292756
+=======
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'y.cc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '204'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://y.cc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://y.cc/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=68ca6f8e978b6ef6b95ac1569afe8c7c5b6c8b75de47d4a63c170e23f9b2e157a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-NQ0V7oknMCDyiY6GZSmTZqgyesgbMsv%22%3B%7D; PHPSESSID=u3ln6prpqeu6qeb7eccq5cgej2'
+    'HTTP_RA_VER' => '2.9.0'
+    'HTTP_RA_SID' => 'B7BAB67A-20131113-062756-42ae6f-99dbc0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;G:\\wamp\\bin\\php\\php5.5.12;F:\\index\\mongodb\\bin;C:\\ProgramData\\ComposerSetup\\bin;F:\\programes\\vagrant\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at y.cc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'y.cc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/sjmcms/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/sjmcms/backend/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/sjmcms/backend/web/index.php'
+    'REMOTE_PORT' => '51016'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1428284860.37
+    'REQUEST_TIME' => 1428284860
+>>>>>>> d1c5d61db8ab679214792d773e16ab5d83cb677d
 ]
