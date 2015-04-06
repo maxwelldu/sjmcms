@@ -52,7 +52,8 @@ return [
         ],
 		 'db' => [
 			  'class' => 'yii\db\Connection',
-              'dsn' => 'mysql:host=maxwelldu.mysql.rds.aliyuncs.com;dbname=sjmcms',
+              'dsn' => 'mysql:host=maxwelldu.mysql.rds.aliyuncs.com:3306;dbname=sjmcms',
+            // 'dsn' => 'mysql:host=localhost;dbname=test',
               'username' => 'maxwelldu',
               'password' => 'yu13jiu14',
               'charset' => 'utf8',

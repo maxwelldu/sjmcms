@@ -9,5 +9,13 @@ return [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+         'db' => [
+			  'class' => 'yii\db\Connection',
+              //'dsn' => 'mysql:host=maxwelldu.mysql.rds.aliyuncs.com;dbname=test',
+             'dsn' => 'mysql:host=localhost;dbname=test',
+              'username' => 'root',
+              'password' => '',
+              'charset' => 'utf8',
+          ],
     ],
 ];

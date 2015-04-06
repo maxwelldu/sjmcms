@@ -6875,3 +6875,275 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1428135358.3658
     'REQUEST_TIME' => 1428135358
 ]
+2015-04-06 04:35:16 [127.0.0.1][-][-][error][yii\db\Exception] exception 'yii\base\ErrorException' with message 'PDO::__construct(): ' in C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'PDO::__construc...', 'C:\\xampp\\htdocs...', 579, Array)
+#1 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=maxw...', 'root', '', NULL)
+#2 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#3 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#4 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#5 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Schema.php(383): yii\db\Connection->getSlavePdo()
+#6 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('\xE5\x80\xAA\xE5\x8D\xAB\xE6\x98\x9F')
+#7 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('\xE5\x80\xAA\xE5\x8D\xAB\xE6\x98\x9F')
+#8 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Command->getRawSql()
+#9 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetchColumn', 0)
+#10 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Query.php(348): yii\db\Command->queryScalar()
+#11 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\UniqueValidator.php(111): yii\db\Query->exists()
+#12 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#13 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#14 C:\xampp\htdocs\sjmcms\frontend\models\SignupForm.php(45): yii\base\Model->validate()
+#15 C:\xampp\htdocs\sjmcms\frontend\controllers\SiteController.php(123): frontend\models\SignupForm->signup()
+#16 [internal function]: frontend\controllers\SiteController->actionSignup()
+#17 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#18 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#20 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#21 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\xampp\htdocs\sjmcms\frontend\web\index.php(18): yii\base\Application->run()
+#23 {main}
+
+Next exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£ ' in C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(0): PDO->__construct()
+#1 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Schema.php(383): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('\xE5\x80\xAA\xE5\x8D\xAB\xE6\x98\x9F')
+#6 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('\xE5\x80\xAA\xE5\x8D\xAB\xE6\x98\x9F')
+#7 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetchColumn', 0)
+#9 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Query.php(348): yii\db\Command->queryScalar()
+#10 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\UniqueValidator.php(111): yii\db\Query->exists()
+#11 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#12 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#13 C:\xampp\htdocs\sjmcms\frontend\models\SignupForm.php(45): yii\base\Model->validate()
+#14 C:\xampp\htdocs\sjmcms\frontend\controllers\SiteController.php(123): frontend\models\SignupForm->signup()
+#15 [internal function]: frontend\controllers\SiteController->actionSignup()
+#16 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#19 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#20 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\sjmcms\frontend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£ ' in C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Schema.php(383): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('\xE5\x80\xAA\xE5\x8D\xAB\xE6\x98\x9F')
+#4 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('\xE5\x80\xAA\xE5\x8D\xAB\xE6\x98\x9F')
+#5 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(791): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetchColumn', 0)
+#7 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Query.php(348): yii\db\Command->queryScalar()
+#8 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\UniqueValidator.php(111): yii\db\Query->exists()
+#9 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#10 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#11 C:\xampp\htdocs\sjmcms\frontend\models\SignupForm.php(45): yii\base\Model->validate()
+#12 C:\xampp\htdocs\sjmcms\frontend\controllers\SiteController.php(123): frontend\models\SignupForm->signup()
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\sjmcms\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-04-06 04:35:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'N3lZdGt5UjhCVGoNDzAcYmYraSY5N2FUB003PgwpJn14FDoEXQoBaQ=='
+    'SignupForm' => [
+        'username' => 'å€ªå«æ˜Ÿ'
+        'email' => '309305822@qq.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'k79s64gvj5lhckanc5ksqlnu64'
+    '_csrf' => '9a49daa7639cd7e53ca8962a52d3ec5dfe430957b8580de825e84d395b01c9c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u-3ydINZQR0RRN3l04nJgPtEOmcp6sSQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sjmcms/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://127.0.0.1/sjmcms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=k79s64gvj5lhckanc5ksqlnu64; _csrf=9a49daa7639cd7e53ca8962a52d3ec5dfe430957b8580de825e84d395b01c9c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u-3ydINZQR0RRN3l04nJgPtEOmcp6sSQ%22%3B%7D'
+    'HTTP_RA_VER' => '2.9.0'
+    'HTTP_RA_SID' => '7CCD89E2-20150329-030303-0a83de-33ca7f'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Users\\å«æ˜Ÿ\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sjmcms/frontend/web/index.php'
+    'REMOTE_PORT' => '60976'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/sjmcms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/sjmcms/frontend/web/index.php'
+    'PHP_SELF' => '/sjmcms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428287704.574
+    'REQUEST_TIME' => 1428287704
+]
+2015-04-06 04:40:01 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='' in C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php:822
+Stack trace:
+#0 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(822): PDOStatement->execute()
+#1 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Query.php(348): yii\db\Command->queryScalar()
+#3 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\UniqueValidator.php(111): yii\db\Query->exists()
+#4 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#5 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#6 C:\xampp\htdocs\sjmcms\frontend\models\SignupForm.php(45): yii\base\Model->validate()
+#7 C:\xampp\htdocs\sjmcms\frontend\controllers\SiteController.php(123): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#12 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#13 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\sjmcms\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+The SQL being executed was: SELECT 1 FROM `user` WHERE `username`='å€ªå«æ˜Ÿ'' in C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Schema.php:534
+Stack trace:
+#0 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(837): yii\db\Schema->convertException(Object(PDOException), 'SELECT 1 FROM `...')
+#1 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetchColumn', 0)
+#2 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\db\Query.php(348): yii\db\Command->queryScalar()
+#3 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\UniqueValidator.php(111): yii\db\Query->exists()
+#4 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#5 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#6 C:\xampp\htdocs\sjmcms\frontend\models\SignupForm.php(45): yii\base\Model->validate()
+#7 C:\xampp\htdocs\sjmcms\frontend\controllers\SiteController.php(123): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('signup', Array)
+#12 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#13 C:\xampp\htdocs\sjmcms\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\sjmcms\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1267
+    [2] => Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+)
+
+2015-04-06 04:40:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'ZjZFVlVsN2kTG3YvMSV5MzdkdQQHIgQFVgIrHDI8QywpWyYmYx9kOA=='
+    'SignupForm' => [
+        'username' => 'å€ªå«æ˜Ÿ'
+        'email' => '309305822@qq.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'k79s64gvj5lhckanc5ksqlnu64'
+    '_csrf' => '9a49daa7639cd7e53ca8962a52d3ec5dfe430957b8580de825e84d395b01c9c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u-3ydINZQR0RRN3l04nJgPtEOmcp6sSQ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/sjmcms/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://127.0.0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://127.0.0.1/sjmcms/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=k79s64gvj5lhckanc5ksqlnu64; _csrf=9a49daa7639cd7e53ca8962a52d3ec5dfe430957b8580de825e84d395b01c9c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u-3ydINZQR0RRN3l04nJgPtEOmcp6sSQ%22%3B%7D'
+    'HTTP_RA_VER' => '2.9.0'
+    'HTTP_RA_SID' => '7CCD89E2-20150329-030303-0a83de-33ca7f'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter\\Driver;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files\\nodejs\\;C:\\HashiCorp\\Vagrant\\bin;C:\\Users\\å«æ˜Ÿ\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sjmcms/frontend/web/index.php'
+    'REMOTE_PORT' => '61145'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/sjmcms/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/sjmcms/frontend/web/index.php'
+    'PHP_SELF' => '/sjmcms/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1428288000.942
+    'REQUEST_TIME' => 1428288000
+]
